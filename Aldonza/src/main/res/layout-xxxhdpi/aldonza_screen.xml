@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:background="@drawable/headeraldonza"
+        android:layout_marginBottom="0dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/twitter"
+                android:onClick="twitter" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/facebook"
+                android:onClick="facebook" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/youtube"
+                android:onClick="youtube" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1">
+
+            <TextView
+                android:id="@+id/textViewTipoVino"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_row="0"
+                android:text="PREMIOS"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_height="55dp"
+                android:layout_width="55dp"
+                android:layout_column="0"
+                android:layout_gravity="left|top"
+                android:layout_row="0"
+                android:background="#000000"
+                android:src="@drawable/menuicono" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_height="55dp"
+                android:layout_width="55dp"
+                android:layout_column="0"
+                android:layout_gravity="right|top"
+                android:layout_row="0"
+                android:background="#000000"
+                android:src="@drawable/masboton" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/linea"
+                android:layout_gravity="fill_horizontal"
+                android:layout_row="0"
+                android:layout_column="0" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/LinearLayout1">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.18"
+            android:columnCount="1">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:src="@drawable/vino1"
+                android:layout_height="354dp"
+                android:layout_marginTop="0dp"
+                android:visibility="visible" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:columnCount="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:layout_gravity="left|top"
+                android:layout_row="0"
+                android:orientation="vertical"
+                android:baselineAligned="false">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ALDONZA SELECCIÓN"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="0dp"
+                    android:textSize="20dp"
+                    android:layout_gravity="center" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="33dp"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPagerA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="11"
+                    android:layout_marginTop="-45dp">
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="left"
+                        android:background="#000000"
+                        android:src="@drawable/flecha" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_column="10"
+                        android:layout_gravity="center_horizontal|top"
+                        android:layout_row="0"
+                        android:background="#000000"
+                        android:src="@drawable/flechader"
+                        android:layout_marginLeft="105dp" />
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

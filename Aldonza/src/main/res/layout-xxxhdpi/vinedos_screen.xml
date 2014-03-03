@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/headeraldonza"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/twitter"
+                android:onClick="twitter" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/facebook"
+                android:onClick="facebook" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="105dp"
+                android:background="@drawable/youtube"
+                android:onClick="youtube" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="vertical" >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1" >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="fill_horizontal"
+                android:layout_row="0"
+                android:src="@drawable/linea" />
+        </GridLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/LinearLayout1"
+        android:layout_marginBottom="200dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/relativeLayout2"
+        android:layout_marginTop="190dp" >
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#000000" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:baselineAligned="false">
+
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:id="@+id/Supervicies"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <ScrollView
+                            android:id="@+id/scVAried"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="La Dehesa de Navamarín (2.200 Ha), privilegiado predio que alberga nuestros viñedos, es un enclave único cuyos suelos son el resultado de millones de años de evolución. Glaciares ocuparon nuestras tierras, también legendarias especies, así como civilizaciones constituidas en históricos Imperios. La antigua Roma constituyó en el área de Navamarín la Colonia Libisosanorum Foroagustana, actual Libisosa, desaparecida en 1411 y dejando un rico legado vitivinícola, del cual han disfrutado las gentes del lugar durante incontables generaciones." />
+                        </ScrollView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/entorno"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <ScrollView
+                            android:id="@+id/scEntorno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Que eligiera este entorno, no fue casualidad, pues se trata de uno de los enclaves más especiales y únicos de nuestro planeta. 1.100 metros de altura, climatología excepcionalmente marcada en las distintas estaciones, rica en vegetación arborícola prácticamente extinta, como son nuestras milenarias Sabinas, con un suelo cuya mineralización representa un ejemplo de equilibrio difícil de encontrar, y que proporciona las dosis adecuadas de vida a nuestras cepas" />
+                        </ScrollView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cosecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <ScrollView
+                            android:id="@+id/scCosecha"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="La delicadeza de nuestros frutos, y su alta pureza y concentración, obligan a vendimiar mediante el sistema tradicional de recolección manual y nocturna, para evitar las altas temperaturas que afectarían tanto al fruto en su proceso de fermentación, como a nuestros vendimiadores" />
+                        </ScrollView>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </RelativeLayout>
+
+</RelativeLayout>

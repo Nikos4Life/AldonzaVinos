@@ -13,7 +13,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.splash);
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         
