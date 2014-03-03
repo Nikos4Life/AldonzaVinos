@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-<string name="app_name">Aldonza Vinos</string>
-<string name="action_settings">Settings</string>
-<string name="hello_world">Hello world!</string>
-<string name="title_activity_main_screen">MainScreenActivity</string>
-<string name="logo_empresa">Logo empresa</string>
-<string name="bienvenido_a_aldonza_vinos">Bienvenido a Aldonza Vinos</string>
-<string name="BackgroundMain">backgroundMain</string>
-<string name="aldonza">ALDONZA</string>
-<string name="Labodega">LA BODEGA</string>
-<string name="Nuestrosvinos">NUESTROS VINOS</string>
-<string name="Aldonzaplaces">ALDONZA PLACES</string>
-<string name="vinedos">VIÑEDOS</string>
-<string name="AldonzaActivity">AldonzaActivity</string>
-<string name="Vinedos">ViñedosActivity</string>
-<string name="LaBodega">La Bodega</string>
-<string name="NuestrosVinos">Nuestros Vinos</string>
-<string name="AldonzaPlaces">Aldonza Places</string>
-<string name="title_activity_dialog">Dialog</string>
-<string name="preferencias_menu">Preferencias</string>
-<string name="about_us_menu">About US</string>
-<string name="title_activity_ppal_galeria">Ppal_galeria</string>
-<string name="concertar_cita">Concertar Cita</string>
-<string name="title_activity_concertar_cita">ConcertarCita</string>
-<string name="bodegainstalaciones1">La integración de nuestras instalaciones con la ubicación de los viñedos, permite que el fruto vendimiado pueda ser trasladado en cuestión de segundos a un entorno de temperatura controlada, para evitar pérdidas o daños en la calidad.  De nuevo, la tradición da la bienvenida a la tecnología. Y es que tras una vendimia manual a golpe de tijera y buen hacer humano, al proceso de elaboración incorporamos 13 depósitos de acero inoxidable de 15.000 litros cada uno totalmente informatizado, </string>
-<string name="bodegainstalaciones2"> en los que se controla la fermentación electrónicamente, 15 depósitos de acero inoxidable empleados para el almacenamiento, con capacidad de 15.000 litros y 6 depósitos isotermos , 2 de ellos \"siempre llenos\". Y de vuelta a la tradición, pues resulta obligado. Nuestra cava de crianza y maduración cuenta con barricas de roble americano, francés, y americano-francés, nunca con más de 3 años de antigüedad, donde cuidamos nuestros tintos.</string>
-<string name="bodegaelaboracion1">La elaboración de grandes vinos ha sido elevada a la categoría de arte, y es por ello que en la Dehesa de Navamarín son artistas quienes elaboran Aldonza. Un antiguo proverbio dice que "Desconfianza y prudencia engendran seguridad", por esta razón sólo elaboramos vino a partir de nuestros propios frutos, en tierra conocida y sincera, controlando desde el sembrado, ya antiguo, hasta la próxima cosecha, que siempre está por venir. Consentimos a nuestras plantas, las amamos y cuidamos, eliminamos los frutos que no están a la altura de nuestras exigencias de calidad mediante podas selectivas a lo largo del año, y cuando la propia uva, instintiva e inteligente, pide seguir su ciclo natural hacía la excelencia, expertos recolectores, siempre guiados por nuestro equipo enológico, hacen honores a dicho ciclo llevando a cabo una exhaustiva y selectiva vendimia manual. En apenas minutos, los frutos pasan a disposición de las mesas de selección, donde una criba aún más exigente por parte de nuestros artistas, elige únicamente los mejores frutos, eliminando impurezas procedentes del propio campo. </string>
-<string name="bodegaelaboracion2">Es entonces cuando los frutos están listos para entregarnos amablemente su esencia y su espíritu, necesario preámbulo tras el cual, y ayudados por acero, madera, vidrio y el sabio paso del tiempo, se habrá iniciado el ancestral y enigmático proceso de creación de unos caldos dignos de llevar por nombre Aldonza... según el viejo hidalgo Don Quijote, Señora de todo el Universo.</string>
-<string name="title_activity_mostrardato_vino">MostrardatoVino</string>
+    <string name="app_name">Aldonza Vinos</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main_screen">MainScreenActivity</string>
+    <string name="logo_empresa">Logo empresa</string>
+    <string name="bienvenido_a_aldonza_vinos">Bienvenido a Aldonza Vinos</string>
+    <string name="BackgroundMain">backgroundMain</string>
+    <string name="aldonza">ALDONZA</string>
+    <string name="Labodega">LA BODEGA</string>
+    <string name="Nuestrosvinos">NUESTROS VINOS</string>
+    <string name="Aldonzaplaces">ALDONZA PLACES</string>
+    <string name="vinedos">VIÑEDOS</string>
+    <string name="AldonzaActivity">AldonzaActivity</string>
+    <string name="Vinedos">ViñedosActivity</string>
+    <string name="LaBodega">La Bodega</string>
+    <string name="NuestrosVinos">Nuestros Vinos</string>
+    <string name="AldonzaPlaces">Aldonza Places</string>
+    <string name="title_activity_dialog">Dialog</string>
+    <string name="preferencias_menu">Preferencias</string>
+    <string name="about_us_menu">About US</string>
+    <string name="title_activity_ppal_galeria">Ppal_galeria</string>
+    <string name="concertar_cita">Concertar Cita</string>
+    <string name="title_activity_concertar_cita">ConcertarCita</string>
+    <string name="bodegainstalaciones1">La integración de nuestras instalaciones con la ubicación de los viñedos, permite que el fruto vendimiado pueda ser trasladado en cuestión de segundos a un entorno de temperatura controlada, para evitar pérdidas o daños en la calidad.  De nuevo, la tradición da la bienvenida a la tecnología. Y es que tras una vendimia manual a golpe de tijera y buen hacer humano, al proceso de elaboración incorporamos 13 depósitos de acero inoxidable de 15.000 litros cada uno totalmente informatizado, </string>
+    <string name="bodegainstalaciones2"> en los que se controla la fermentación electrónicamente, 15 depósitos de acero inoxidable empleados para el almacenamiento, con capacidad de 15.000 litros y 6 depósitos isotermos , 2 de ellos \"siempre llenos\". Y de vuelta a la tradición, pues resulta obligado. Nuestra cava de crianza y maduración cuenta con barricas de roble americano, francés, y americano-francés, nunca con más de 3 años de antigüedad, donde cuidamos nuestros tintos.</string>
+    <string name="bodegaelaboracion1">La elaboración de grandes vinos ha sido elevada a la categoría de arte, y es por ello que en la Dehesa de Navamarín son artistas quienes elaboran Aldonza. Un antiguo proverbio dice que "Desconfianza y prudencia engendran seguridad", por esta razón sólo elaboramos vino a partir de nuestros propios frutos, en tierra conocida y sincera, controlando desde el sembrado, ya antiguo, hasta la próxima cosecha, que siempre está por venir. Consentimos a nuestras plantas, las amamos y cuidamos, eliminamos los frutos que no están a la altura de nuestras exigencias de calidad mediante podas selectivas a lo largo del año, y cuando la propia uva, instintiva e inteligente, pide seguir su ciclo natural hacía la excelencia, expertos recolectores, siempre guiados por nuestro equipo enológico, hacen honores a dicho ciclo llevando a cabo una exhaustiva y selectiva vendimia manual. En apenas minutos, los frutos pasan a disposición de las mesas de selección, donde una criba aún más exigente por parte de nuestros artistas, elige únicamente los mejores frutos, eliminando impurezas procedentes del propio campo. </string>
+    <string name="bodegaelaboracion2">Es entonces cuando los frutos están listos para entregarnos amablemente su esencia y su espíritu, necesario preámbulo tras el cual, y ayudados por acero, madera, vidrio y el sabio paso del tiempo, se habrá iniciado el ancestral y enigmático proceso de creación de unos caldos dignos de llevar por nombre Aldonza... según el viejo hidalgo Don Quijote, Señora de todo el Universo.</string>
+    <string name="title_activity_mostrardato_vino">MostrardatoVino</string>
 
 
 </resources>
