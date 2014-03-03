@@ -10,7 +10,6 @@ import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 /**
  * Created by Miguel on 6/02/14.
@@ -101,7 +100,7 @@ public class NuestrosVinos extends Activity {
     	} 
     	catch (ActivityNotFoundException e)
     	{
-    	  //la app no está instalada, mostrar por ejemplo un AlertDialog
+    	  //la app no esta instalada, mostrar por ejemplo un AlertDialog
     	}
     }
 //    public void getDatosDDBB()

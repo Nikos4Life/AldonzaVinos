@@ -79,10 +79,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.aldonza.vinos.Ppal_galeria"
-            android:label="@string/title_activity_ppal_galeria" >
-        </activity>
-        <activity
             android:name="com.aldonza.vinos.ConcertarCita"
             android:label="@string/title_activity_concertar_cita" >
         </activity>

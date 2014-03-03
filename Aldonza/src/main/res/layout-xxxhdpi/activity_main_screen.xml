@@ -3,7 +3,7 @@
     android:layout_height="fill_parent"
     android:alwaysDrawnWithCache="false"
     android:background="@drawable/mainbackground"
-    android:visibility="visible" >
+    android:visibility="visible">
 
     <GridLayout
         android:id="@+id/gridLayout1"
@@ -16,7 +16,7 @@
         android:layout_marginLeft="09dp"
         android:layout_marginRight="120dp"
         android:layout_marginTop="165dp"
-        android:visibility="visible" >
+        android:visibility="visible">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -24,12 +24,11 @@
             android:layout_column="0"
             android:layout_gravity="top"
             android:layout_row="2"
-            android:onClick="aldonza"
             android:orientation="vertical"
-            android:visibility="visible" >
+            android:visibility="visible">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textViewAldonza"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="0"
@@ -37,10 +36,11 @@
                 android:layout_marginLeft="05dp"
                 android:layout_marginTop="08dp"
                 android:layout_row="1"
-                android:onClick="aldonza"
+                android:onClick="pulsar"
                 android:text="ALDONZA"
                 android:textAllCaps="false"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:clickable="true" />
         </LinearLayout>
 
         <LinearLayout
@@ -51,10 +51,10 @@
             android:layout_gravity="top"
             android:layout_row="3"
             android:orientation="vertical"
-            android:visibility="visible" >
+            android:visibility="visible">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textViewVinedos"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_column="0"
@@ -62,9 +62,11 @@
                 android:layout_marginLeft="05dp"
                 android:layout_marginTop="08dp"
                 android:layout_row="1"
+                android:onClick="pulsar"
                 android:text="VIÑEDOS"
                 android:textAllCaps="false"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:clickable="true" />
         </LinearLayout>
 
         <LinearLayout
@@ -75,10 +77,10 @@
             android:layout_gravity="top"
             android:layout_row="4"
             android:orientation="vertical"
-            android:visibility="visible" >
+            android:visibility="visible">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textViewBodega"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_column="0"
@@ -86,9 +88,11 @@
                 android:layout_marginLeft="05dp"
                 android:layout_marginTop="08dp"
                 android:layout_row="1"
+                android:onClick="pulsar"
                 android:text="LA BODEGA"
                 android:textAllCaps="false"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:clickable="true" />
         </LinearLayout>
 
         <LinearLayout
@@ -99,10 +103,10 @@
             android:layout_gravity="top"
             android:layout_row="5"
             android:orientation="vertical"
-            android:visibility="visible" >
+            android:visibility="visible">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/textViewNVinos"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_column="0"
@@ -110,9 +114,11 @@
                 android:layout_marginLeft="05dp"
                 android:layout_marginTop="08dp"
                 android:layout_row="1"
+                android:onClick="pulsar"
                 android:text="NUESTROS VINOS"
                 android:textAllCaps="false"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:clickable="true" />
         </LinearLayout>
 
         <LinearLayout
@@ -123,10 +129,10 @@
             android:layout_gravity="top"
             android:layout_row="6"
             android:orientation="vertical"
-            android:visibility="visible" >
+            android:visibility="visible">
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/textViewAPlaces"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_column="0"
@@ -134,9 +140,11 @@
                 android:layout_marginLeft="05dp"
                 android:layout_marginTop="08dp"
                 android:layout_row="1"
+                android:onClick="pulsar"
                 android:text="ALDONZA PLACES"
                 android:textAllCaps="false"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:clickable="true" />
         </LinearLayout>
     </GridLayout>
 

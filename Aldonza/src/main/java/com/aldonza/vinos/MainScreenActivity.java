@@ -85,7 +85,7 @@ public class MainScreenActivity extends Activity {
         switch (view.getId()) {
             case R.id.textViewAldonza:
                 try {
-                    clase = Class.forName("com.aldonza.vinos.Aldonza");
+                    clase = Class.forName("com.aldonza.Aldonza");
                     Intent intent = new Intent(this, clase);
                     startActivity(intent);
                 } catch (ClassNotFoundException e) {

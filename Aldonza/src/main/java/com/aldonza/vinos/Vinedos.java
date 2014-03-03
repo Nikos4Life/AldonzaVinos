@@ -128,7 +128,7 @@ public class Vinedos extends Activity {
     	} 
     	catch (ActivityNotFoundException e)
     	{
-    	  //la app no está instalada, mostrar por ejemplo un AlertDialog
+    	  //la app no esta instalada, mostrar por ejemplo un AlertDialog
     	}
     }
 
