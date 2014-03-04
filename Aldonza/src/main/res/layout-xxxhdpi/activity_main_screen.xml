@@ -6,6 +6,41 @@
     android:background="@drawable/mainbackground"
     android:visibility="visible">
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:id="@+id/linearLayout5">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/twitter"
+            android:onClick="twitter" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/facebook"
+            android:onClick="facebook" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="105dp"
+            android:background="@drawable/youtube"
+            android:onClick="youtube" />
+    </LinearLayout>
+
     <GridLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -149,4 +184,5 @@
         </LinearLayout>
 
     </GridLayout>
+
 </RelativeLayout>
