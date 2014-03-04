@@ -107,7 +107,15 @@ public class AldonzaPlaces extends FragmentActivity {
             return v;
         }
     }
-
+    public static class Museo extends Fragment {
+        @Override
+        public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                                 Bundle bundle) {
+            View v = inflater.inflate(R.layout.museo, container,
+                    false);
+            return v;
+        }
+    }
 
     /**
      * A simple FragmentPagerAdapter that returns two TextFragment and a
@@ -120,7 +128,7 @@ public class AldonzaPlaces extends FragmentActivity {
 
         @Override
         public int getCount() {
-            return 2;
+            return 3;
         }
 
         @Override
@@ -130,6 +138,8 @@ public class AldonzaPlaces extends FragmentActivity {
                     return new BodasCamacho();
                 case 1:
                     return new Arqueologico();
+                case 2:
+                    return new Museo();
                 default:
                     return null;
             }
