@@ -3,10 +3,45 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-	<fragment
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondobodega1_2">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textViewInstalaciones"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="5dp"
+            android:textSize="30dp"
+            android:textStyle="normal"
+            android:textColor="#e03f4b"
+            android:text="UBICACIÓN" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/linea"
+            android:layout_gravity="center_horizontal|top" />
+    </LinearLayout>
+
+    <fragment
     android:id="@+id/map"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    class="com.google.android.gms.maps.SupportMapFragment" />
+    class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp" />
 </RelativeLayout>
