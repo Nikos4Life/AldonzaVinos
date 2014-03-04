@@ -1,13 +1,6 @@
 package com.aldonza.vinos;
 
 
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
@@ -22,6 +15,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 /**
  * This shows how to add a map to a ViewPager. Note the use of
@@ -40,6 +40,7 @@ public class Bodega extends FragmentActivity {
 
 		mPager = (ViewPager) findViewById(R.id.viewPagerBodega);
 		mPager.setAdapter(mAdapter);
+        mPager.setPageTransformer(true, new ZoomOutPageTransformer());
 
 		// This is required to avoid a black flash when the map is loaded. The
 		// flash is due

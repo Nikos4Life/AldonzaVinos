@@ -9,8 +9,8 @@
                     android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:background="@drawable/premio3"
-        android:layout_marginBottom="0dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="11dp"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp">
 
@@ -18,7 +18,7 @@
                         android:id="@+id/textView3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="2012 \n Añada 2007 \n Medalla de Plata en el Viñalies \n Internacionales \n Paris(Francia)"
+                        android:text="2012 \n Añada 2006 \n Medalla de Plata en Pro Wein  \n PSWC \n Düsseldorf (Alemania)"
                         android:textAppearance="?android:attr/textAppearanceMedium"
                         android:gravity="center"
                         android:textSize="14dp"
