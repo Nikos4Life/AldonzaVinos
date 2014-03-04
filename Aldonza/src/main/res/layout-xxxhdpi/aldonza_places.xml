@@ -5,19 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Ventana Aldonza Places"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/LinearLayoutPl">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="mapa"
-        android:text="Donde Estamos" />
+        <view
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="android.support.v4.view.ViewPager"
+            android:id="@+id/viewPagerPlaces" />
+    </LinearLayout>
 
 </LinearLayout>
