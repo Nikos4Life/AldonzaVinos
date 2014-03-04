@@ -1,6 +1,7 @@
 package com.aldonza.vinos;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.ContentValues;
@@ -24,7 +25,8 @@ public class ConcertarCita extends Activity
 	protected void onCreate(Bundle savedInstanceState) 
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_concertar_cita);
+        setContentView(R.layout.pruebacita);
+		//setContentView(R.layout.activity_concertar_cita);
 		Toast.makeText(this, "ConccertarCita", Toast.LENGTH_LONG).show();
 		
 		DNI = (EditText)findViewById(R.id.editText1);
@@ -64,7 +66,13 @@ public class ConcertarCita extends Activity
 		numAsistentes.setText("");
 		pref.setText("");
 		
-		Toast.makeText(this, "Cita concertada", Toast.LENGTH_SHORT).show();
+		Toast.makeText(this, "Cita concertada"+Dni+Nombre+Num+Pref, Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(android.content.Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Cita");//se usará por ejemplo para email
+        intent.putExtra(Intent.EXTRA_TEXT, "DNI: "+Dni+" Nombre: "+Nombre+" Asistentes: "+Num+" Hora: "+Pref);
+        startActivity(Intent.createChooser(intent, "Compartir usando"));
 	}
 	
 	public void consulta(View v)
