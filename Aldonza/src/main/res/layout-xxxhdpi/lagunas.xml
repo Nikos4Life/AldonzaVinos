@@ -2,7 +2,7 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/bcamacho">
+    android:background="@drawable/lagunas">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="BODAS CAMACHO"
+                android:text="LAGUNAS DE RUIDERA"
                 android:id="@+id/textViewInstalaciones"
                 android:layout_gravity="center_horizontal|top"
                 android:layout_marginTop="5dp"
@@ -48,11 +48,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/scrollView"
-            android:layout_marginTop="50dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true">
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="69dp">
 
             <LinearLayout
                 android:orientation="vertical"
@@ -66,7 +66,7 @@
                     android:id="@+id/textView"
                     android:textColor="#000"
                     android:textSize="23dp"
-                    android:text="@string/AP_bodascamacho" />
+                    android:text="@string/lagunas1" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -74,19 +74,13 @@
                     android:id="@+id/textView"
                     android:textColor="#000"
                     android:textSize="23dp"
-                    android:text="@string/AP_bodascamacho2" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:id="@+id/textView"
-                    android:textColor="#000"
-                    android:textSize="23dp"
-                    android:text="@string/AP_bodascamacho3" />
+                    android:text="@string/lagunas2" />
+
 
 
             </LinearLayout>
         </ScrollView>
 
     </RelativeLayout>
+
 </RelativeLayout>
