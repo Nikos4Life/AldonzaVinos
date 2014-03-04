@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="BODAS CAMACHO"
-                android:id="@+id/textViewInstalaciones"
+                android:id="@+id/textViewbodas"
                 android:layout_gravity="center_horizontal|top"
                 android:layout_marginTop="5dp"
                 android:textSize="30dp"
