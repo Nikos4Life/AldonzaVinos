@@ -31,7 +31,7 @@ public class Dialog extends Activity {
 		InputStream input = null;
 		//Utilizaremos un try y catch para tratar posibles excepciones
 		try{
-			input = assetManager.open("Aldonza/assets/about/aboutUs.txt");
+			input = assetManager.open("src/main/assets/aboutUs.txt");
 			ByteArrayOutputStream byteStream = new ByteArrayOutputStream();
 			byte[] bytes = new byte[4096];
 			int len = 0;
