@@ -21,7 +21,7 @@ public class MainScreenActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_screen);
-
+        getActionBar().setTitle("");
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
 
 
