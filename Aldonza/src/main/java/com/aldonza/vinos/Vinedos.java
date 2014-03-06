@@ -22,7 +22,7 @@ public class Vinedos extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vinedos_screen);
-
+        getActionBar().setTitle("");
         MyPageAdapter adapter = new MyPageAdapter();
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager1);
         viewPager.setAdapter(adapter);

@@ -19,7 +19,7 @@ public class NuestrosVinos extends Activity {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView(R.layout.nuestros_vinos);
-
+        getActionBar().setTitle("");
         AdapterNuestrosVinos adapter = new AdapterNuestrosVinos();
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewPagerA2);
         viewPager.setAdapter(adapter);

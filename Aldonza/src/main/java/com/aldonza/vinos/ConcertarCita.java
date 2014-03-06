@@ -26,6 +26,7 @@ public class ConcertarCita extends Activity
 	{
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.pruebacita);
+        getActionBar().setTitle("");
 		//setContentView(R.layout.activity_concertar_cita);
 		Toast.makeText(this, "ConccertarCita", Toast.LENGTH_LONG).show();
 		

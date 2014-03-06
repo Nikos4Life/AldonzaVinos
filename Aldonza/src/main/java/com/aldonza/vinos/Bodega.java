@@ -36,6 +36,7 @@ public class Bodega extends FragmentActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.la_bodega_screen);
+        getActionBar().setTitle("");
 		mAdapter = new MyAdapter(getSupportFragmentManager());
 
 		mPager = (ViewPager) findViewById(R.id.viewPagerBodega);

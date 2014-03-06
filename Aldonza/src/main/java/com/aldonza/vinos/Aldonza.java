@@ -37,6 +37,8 @@ public class Aldonza extends FragmentActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aldonza_screen);
+        getActionBar().setTitle("");
+        getActionBar().hide();
         mAdapter = new MyAdapter(getSupportFragmentManager());
 
         mPager = (ViewPager) findViewById(R.id.viewPagerAldonza);
