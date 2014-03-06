@@ -33,7 +33,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/imageView"
             android:src="@drawable/linea"
-            android:layout_gravity="center_horizontal|top" />
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="1dp" />
     </LinearLayout>
 
     <fragment

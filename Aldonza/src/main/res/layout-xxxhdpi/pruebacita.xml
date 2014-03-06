@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    >
+    android:background="#000">
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -48,6 +48,32 @@
                 android:layout_marginTop="105dp"
                 android:background="@drawable/youtube"
                 android:onClick="youtube" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/linea"
+                    android:layout_gravity="fill_horizontal"
+                    android:layout_row="0"
+                    android:layout_column="0" />
+
+            </GridLayout>
 
         </LinearLayout>
     </LinearLayout>

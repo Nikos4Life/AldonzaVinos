@@ -30,7 +30,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class Aldonza extends FragmentActivity {
     private MyAdapter mAdapter;
     private ViewPager mPager;
-
+    private static ViewPager mViewPager;
 
     /** Called when the activity is first created. */
     @Override
@@ -109,11 +109,25 @@ public class Aldonza extends FragmentActivity {
             super.onViewCreated(view, savedInstanceState);
             MyPageAdapterPremios adapter = new MyPageAdapterPremios();
             adapter.setN(4);
-            ViewPager mViewPager = (ViewPager) view.findViewById(R.id.viewPagerPremios);
+            mViewPager = (ViewPager) view.findViewById(R.id.viewPagerPremios);
             mViewPager.setAdapter(adapter);
         }
     }
-
+    //**************************************************
+    /*
+    *Metodos siguiente y atras para cambiar de vino
+    * NOTA: solo funciona con el vino verde
+     */
+    public  int getItem(int i) {
+        return mViewPager.getCurrentItem() + i;
+    }
+    public  void siguiente(View view) {
+        mViewPager.setCurrentItem(getItem(+1), true); //getItem(-1) for previous
+    }
+    public  void atras(View view) {
+        mViewPager.setCurrentItem(getItem(-1), true);
+    }
+    //**************************************************
     /** A simple fragment that displays a TextView. */
     public static class pisces extends Fragment {
         @Override
@@ -128,7 +142,7 @@ public class Aldonza extends FragmentActivity {
             super.onViewCreated(view, savedInstanceState);
             MyPageAdapterPremios adapter = new MyPageAdapterPremios();
             adapter.setN(6);
-            ViewPager mViewPager = (ViewPager) view.findViewById(R.id.viewPagerPisces);
+            mViewPager = (ViewPager) view.findViewById(R.id.viewPagerPisces);
             mViewPager.setAdapter(adapter);
         }
     }
