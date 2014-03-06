@@ -9,7 +9,7 @@
     <LinearLayout
         android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
@@ -87,7 +87,8 @@
             android:id="@+id/viewPager1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentBottom="true" />
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp" />
 
     </RelativeLayout>
 
@@ -98,7 +99,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/relativeLayout2"
-        android:layout_marginTop="190dp" >
+        android:layout_marginTop="170dp" >
 
         <TabHost
             android:id="@android:id/tabhost"
