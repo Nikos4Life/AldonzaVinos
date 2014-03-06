@@ -5,5 +5,6 @@
         android:id="@+id/sonido_preferencias"
         android:key="sonido"
         android:title="Reproducir música"
+        android:icon="@drawable/music"
         android:summary="Se reproduce música de fondo" />
 </PreferenceScreen>
