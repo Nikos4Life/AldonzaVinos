@@ -81,7 +81,7 @@
                     android:layout_marginTop="-45dp">
 
                     <ImageButton
-                        android:id="@+id/imageButton3"
+                        android:id="@+id/imageButtonAtrasSel"
                         android:layout_width="55dp"
                         android:layout_height="55dp"
                         android:layout_gravity="left"
@@ -90,7 +90,7 @@
                         android:onClick="atras" />
 
                     <ImageButton
-                        android:id="@+id/imageButton4"
+                        android:id="@+id/imageButtonSiguienteSel"
                         android:layout_width="55dp"
                         android:layout_height="55dp"
                         android:layout_column="10"

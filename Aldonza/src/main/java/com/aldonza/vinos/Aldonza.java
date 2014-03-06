@@ -89,6 +89,21 @@ public class Aldonza extends FragmentActivity {
         return false;
 
     }
+    //**************************************************
+    /*
+    *Metodos siguiente y atras para cambiar de vino
+    * NOTA: solo funciona con el vino verde
+     */
+    public  int getItem(int i) {
+        return mViewPager.getCurrentItem() + i;
+    }
+    public  void siguiente(View view) {
+        mViewPager.setCurrentItem(getItem(+1), true); //getItem(-1) for previous
+    }
+    public  void atras(View view) {
+        mViewPager.setCurrentItem(getItem(-1), true);
+    }
+    //**************************************************
     /** A simple fragment that displays a TextView. */
     public static class aSeleccion extends Fragment {
         @Override
@@ -106,21 +121,7 @@ public class Aldonza extends FragmentActivity {
             mViewPager.setAdapter(adapter);
         }
     }
-    //**************************************************
-    /*
-    *Metodos siguiente y atras para cambiar de vino
-    * NOTA: solo funciona con el vino verde
-     */
-    public  int getItem(int i) {
-        return mViewPager.getCurrentItem() + i;
-    }
-    public  void siguiente(View view) {
-        mViewPager.setCurrentItem(getItem(+1), true); //getItem(-1) for previous
-    }
-    public  void atras(View view) {
-        mViewPager.setCurrentItem(getItem(-1), true);
-    }
-    //**************************************************
+
     /** A simple fragment that displays a TextView. */
     public static class pisces extends Fragment {
         @Override
