@@ -16,17 +16,17 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_marginLeft="155dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="140dp"
             android:layout_marginTop="62dp"
             android:background="@drawable/twitter"
             android:onClick="twitter" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="62dp"
             android:background="@drawable/facebook"
@@ -34,8 +34,8 @@
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="62dp"
             android:background="@drawable/youtube"
@@ -65,7 +65,7 @@
             android:visibility="visible">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/aldonza"
@@ -78,7 +78,7 @@
                 android:layout_gravity="left"
                 android:layout_marginLeft="03dp"
                 android:textAllCaps="false"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:gravity="center_vertical" />
 
         </LinearLayout>
@@ -92,7 +92,7 @@
             android:layout_gravity="top">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/vinedos"
@@ -104,7 +104,7 @@
                 android:layout_marginLeft="03dp"
                 android:textAllCaps="false"
                 android:gravity="center_vertical"
-                android:textSize="20dp" />
+                android:textSize="15dp" />
 
         </LinearLayout>
 
@@ -129,7 +129,9 @@
                 android:layout_gravity="center|left|top"
                 android:layout_marginLeft="03dp"
                 android:textAllCaps="false"
-                android:textSize="20dp" />
+                android:textSize="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginTop="-0.5dp" />
 
 
         </LinearLayout>
@@ -155,8 +157,9 @@
                 android:layout_gravity="left"
                 android:layout_marginLeft="03dp"
                 android:textAllCaps="false"
-                android:textSize="20dp"
-                android:layout_marginTop="2dp" />
+                android:textSize="17dp"
+                android:layout_marginTop="-0.5dp"
+                android:gravity="center_vertical" />
 
         </LinearLayout>
 
@@ -166,7 +169,8 @@
             android:layout_height="29.1dp"
             android:layout_row="5"
             android:layout_column="0"
-            android:layout_gravity="top">
+            android:layout_gravity="top"
+            android:layout_marginTop="-0.5dp">
 
             <TextView
                 android:layout_width="fill_parent"
@@ -179,10 +183,11 @@
                 android:layout_row="1"
                 android:layout_column="0"
                 android:layout_gravity="center|top"
-                android:layout_marginTop="2dp"
+                android:layout_marginTop="0dp"
                 android:layout_marginLeft="03dp"
                 android:textAllCaps="false"
-                android:textSize="20dp" />
+                android:textSize="17dp"
+                android:gravity="center_vertical" />
 
         </LinearLayout>
 
