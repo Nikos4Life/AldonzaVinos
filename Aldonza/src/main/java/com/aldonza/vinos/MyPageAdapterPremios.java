@@ -70,6 +70,32 @@ public class MyPageAdapterPremios extends PagerAdapter {
                 view = inflater.inflate(resId, null);
                 ((ViewPager) collection).addView(view, 0);
                 break;
+            case R.id.viewPagerNav:
+                resId = 0;
+                switch (position) {
+                    case 0:
+                        resId = R.layout.premio1nav;
+                        break;
+                    case 1:
+                        resId = R.layout.premio2nav;
+                        break;
+                    case 2:
+                        resId = R.layout.premio3nav;
+                        break;
+                    case 3:
+                        resId = R.layout.premio4nav;
+                        break;
+                    case 4:
+                        resId = R.layout.premio5nav;
+                        break;
+                    case 5:
+                        resId = R.layout.premio6nav;
+                        break;
+
+                }
+                view = inflater.inflate(resId, null);
+                ((ViewPager) collection).addView(view, 0);
+                break;
         }
         return view;
     }

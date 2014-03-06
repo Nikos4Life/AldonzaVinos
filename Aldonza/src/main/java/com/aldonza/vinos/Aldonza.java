@@ -16,13 +16,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-
 /**
  * This shows how to add a map to a ViewPager. Note the use of
  * {@link android.view.ViewGroup#requestTransparentRegion(android.view.View)} to reduce jankiness.
@@ -133,55 +126,21 @@ public class Aldonza extends FragmentActivity {
         }
     }
 
-    public static class Mapa extends Fragment {
-        private static final int MAP_TYPE_SATELLITE = 2;
-        final LatLng HAMBURG = new LatLng(53.558, 9.927);
-        final LatLng KIEL = new LatLng(53.551, 9.993);
-        GoogleMap map;
-
+    public static class Navamarin extends Fragment {
+        @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                                 Bundle savedInstanceState) {
-            View v = inflater.inflate(R.layout.bodegaubicacion, null, false);
-//			FragmentTransaction ft = getFragmentManager().beginTransaction();
-//
-//			map = ((SupportMapFragment) getFragmentManager().findFragmentById(
-//					R.id.map)).getMap();
-//
-//
-//			ft.commit();
-//
-//			Marker hamburg = map.addMarker(new MarkerOptions()
-//					.position(HAMBURG).title("Hamburg"));
-//			/*
-//			 * Marker kiel = map.addMarker(new MarkerOptions() .position(KIEL)
-//			 * .title("Kiel") .snippet("Kiel is cool")
-//			 * .icon(BitmapDescriptorFactory
-//			 * .fromResource(R.drawable.ic_launcher)));
-//			 */
-//			// Move the camera instantly to hamburg with a zoom of 15.
-//			map.moveCamera(CameraUpdateFactory.newLatLngZoom(HAMBURG, 15));
-//
-//			// Zoom in, animating the camera.
-//			map.animateCamera(CameraUpdateFactory.zoomTo(10), 2000, null);
-//			*/
-            map = ((SupportMapFragment) getFragmentManager().findFragmentById(R.id.map)).getMap();
-            map.setMapType(MAP_TYPE_SATELLITE);
-
-            LatLng Aldonza = new LatLng(38.9943, -2.41438);
-
-            map.setMyLocationEnabled(true);
-            map.moveCamera(CameraUpdateFactory.newLatLngZoom(Aldonza, 13));
-
-            map.addMarker(new MarkerOptions()
-                    .title("Aldonza")
-                    .snippet("Vinos")
-                    .position(Aldonza).icon(BitmapDescriptorFactory.fromResource(R.drawable.marker)));
+                                 Bundle bundle) {
+            View v = inflater.inflate(R.layout.aldonzanavamarin, container,
+                    false);
             return v;
         }
-
-        public void onActivityCreated(Bundle savedInstanceState) {
-            super.onActivityCreated(savedInstanceState);
-
+        @Override
+        public void onViewCreated(View view, Bundle savedInstanceState) {
+            super.onViewCreated(view, savedInstanceState);
+            MyPageAdapterPremios adapter = new MyPageAdapterPremios();
+            adapter.setN(6);
+            ViewPager mViewPager = (ViewPager) view.findViewById(R.id.viewPagerNav);
+            mViewPager.setAdapter(adapter);
         }
     }
 
@@ -207,7 +166,7 @@ public class Aldonza extends FragmentActivity {
                 case 1:
                     return new pisces();
                 case 2:
-                    return new Mapa();
+                    return new Navamarin();
                 default:
                     return null;
             }

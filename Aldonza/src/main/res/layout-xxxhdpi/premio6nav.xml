@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/premio6nav"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2011 \n Añada 2006 \n Medalla de Plata en el \n Citadelles du Vin \n Burdeos (Francia)"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:layout_weight="0"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+
+
+</LinearLayout>
