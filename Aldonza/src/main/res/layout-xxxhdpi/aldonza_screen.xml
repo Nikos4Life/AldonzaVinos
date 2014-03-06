@@ -87,11 +87,56 @@
         android:layout_below="@+id/LinearLayout1"
         android:id="@+id/linearLayout">
 
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical" >
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1" >
+
+                <TextView
+                    android:id="@+id/textViewTipoVino"
+                    android:layout_column="0"
+                    android:layout_gravity="center"
+                    android:layout_row="0"
+                    android:text="PREMIOS"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_height="55dp"
+                    android:layout_width="55dp"
+                    android:layout_column="0"
+                    android:layout_gravity="left|top"
+                    android:layout_row="0"
+                    android:background="#000000"
+                    android:src="@drawable/menuicono" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_height="55dp"
+                    android:layout_width="55dp"
+                    android:layout_column="0"
+                    android:layout_gravity="right|top"
+                    android:layout_row="0"
+                    android:background="#000000"
+                    android:src="@drawable/masboton" />
+            </GridLayout>
+        </LinearLayout>
+
         <view
             class="android.support.v4.view.ViewPager"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/viewPagerAldonza" />
+
     </LinearLayout>
 
 </RelativeLayout>

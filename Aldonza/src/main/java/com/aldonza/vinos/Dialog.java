@@ -27,7 +27,7 @@ public class Dialog extends Activity {
 				
 		//lectura assets
 		AssetManager assetManager = this.getAssets();
-		//definimos le inputStream
+		//definimos el inputStream
 		InputStream input = null;
 		//Utilizaremos un try y catch para tratar posibles excepciones
 		try{

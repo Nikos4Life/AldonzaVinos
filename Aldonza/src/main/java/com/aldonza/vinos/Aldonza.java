@@ -98,7 +98,6 @@ public class Aldonza extends FragmentActivity {
     }
     /** A simple fragment that displays a TextView. */
     public static class aSeleccion extends Fragment {
-
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle bundle) {
@@ -109,19 +108,28 @@ public class Aldonza extends FragmentActivity {
         public void onViewCreated(View view, Bundle savedInstanceState) {
             super.onViewCreated(view, savedInstanceState);
             MyPageAdapterPremios adapter = new MyPageAdapterPremios();
+            adapter.setN(4);
             ViewPager mViewPager = (ViewPager) view.findViewById(R.id.viewPagerPremios);
             mViewPager.setAdapter(adapter);
         }
     }
 
     /** A simple fragment that displays a TextView. */
-    public static class Elaboracion extends Fragment {
+    public static class pisces extends Fragment {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle bundle) {
-            View v = inflater.inflate(R.layout.bodegaelaboracion, container,
+            View v = inflater.inflate(R.layout.aldonzapisces, container,
                     false);
             return v;
+        }
+        @Override
+        public void onViewCreated(View view, Bundle savedInstanceState) {
+            super.onViewCreated(view, savedInstanceState);
+            MyPageAdapterPremios adapter = new MyPageAdapterPremios();
+            adapter.setN(6);
+            ViewPager mViewPager = (ViewPager) view.findViewById(R.id.viewPagerPisces);
+            mViewPager.setAdapter(adapter);
         }
     }
 
@@ -197,7 +205,7 @@ public class Aldonza extends FragmentActivity {
                 case 0:
                     return new aSeleccion();
                 case 1:
-                    return new Elaboracion();
+                    return new pisces();
                 case 2:
                     return new Mapa();
                 default:

@@ -10,32 +10,67 @@ import android.view.View;
 
 public class MyPageAdapterPremios extends PagerAdapter {
     //---return the total number of pages---
+    private int resId;
+    private View view;
+    private int number;
+    @Override
     public int getCount() {
-        return 4;
+        return number;
     }
-
+    public void setN(int N) {
+        this.number = N;
+    }
     public Object instantiateItem(View collection, int position) {
         //ImageInflater inf = (ImageInflater)collection.getContext().getSystemService(Context.)
         LayoutInflater inflater = (LayoutInflater) collection.getContext()
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        int resId = 0;
-        switch (position) {
-            case 0:
-                resId = R.layout.premio1;
+        switch (collection.getId()){
+            case R.id.viewPagerPremios:
+                resId = 0;
+                switch (position) {
+                    case 0:
+                        resId = R.layout.premio1;
+                        break;
+                    case 1:
+                        resId = R.layout.premio3;
+                        break;
+                    case 2:
+                        resId = R.layout.premio2;
+                        break;
+                    case 3:
+                        resId = R.layout.premio4;
+                        break;
+                }
+            view = inflater.inflate(resId, null);
+            ((ViewPager) collection).addView(view, 0);
                 break;
-            case 1:
-                resId = R.layout.premio3;
-                break;
-            case 2:
-                resId = R.layout.premio2;
-                break;
-            case 3:
-                resId = R.layout.premio4;
-                break;
+            case R.id.viewPagerPisces:
+                resId = 0;
+                switch (position) {
+                    case 0:
+                        resId = R.layout.premio1pisces;
+                        break;
+                    case 1:
+                        resId = R.layout.premio2pisces;
+                        break;
+                    case 2:
+                        resId = R.layout.premio3pisces;
+                        break;
+                    case 3:
+                        resId = R.layout.premio4pisces;
+                        break;
+                    case 4:
+                        resId = R.layout.premio5pisces;
+                        break;
+                    case 5:
+                        resId = R.layout.premio6pisces;
+                        break;
 
+                }
+                view = inflater.inflate(resId, null);
+                ((ViewPager) collection).addView(view, 0);
+                break;
         }
-        View view = inflater.inflate(resId, null);
-        ((ViewPager) collection).addView(view, 0);
         return view;
     }
 
