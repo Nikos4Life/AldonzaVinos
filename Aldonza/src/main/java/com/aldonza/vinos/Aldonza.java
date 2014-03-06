@@ -24,7 +24,8 @@ public class Aldonza extends FragmentActivity {
     private MyAdapter mAdapter;
     private ViewPager mPager;
     private static ViewPager mViewPager;
-
+    private static ViewPager mViewPagerPisces;
+    private static ViewPager mViewPagerNav;
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -41,7 +42,7 @@ public class Aldonza extends FragmentActivity {
         // This is required to avoid a black flash when the map is loaded. The
         // flash is due
         // to the use of a SurfaceView as the underlying view of the map.
-        mPager.requestTransparentRegion(mPager);
+        //mPager.requestTransparentRegion(mPager);
     }
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -72,7 +73,6 @@ public class Aldonza extends FragmentActivity {
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }
-
         }
         if (item.getItemId() == R.id.cocerCita) {
 
@@ -97,11 +97,29 @@ public class Aldonza extends FragmentActivity {
     public  int getItem(int i) {
         return mViewPager.getCurrentItem() + i;
     }
-    public  void siguiente(View view) {
+    public  void siguientealdonza(View view) {
         mViewPager.setCurrentItem(getItem(+1), true); //getItem(-1) for previous
     }
-    public  void atras(View view) {
+    public  void atrasaldonza(View view) {
         mViewPager.setCurrentItem(getItem(-1), true);
+    }
+    public  int getItempisces(int i) {
+        return mViewPagerPisces.getCurrentItem() + i;
+    }
+    public  void siguientepisces(View view) {
+        mViewPagerPisces.setCurrentItem(getItempisces(+1), true); //getItem(-1) for previous
+    }
+    public  void atraspisces(View view) {
+        mViewPagerPisces.setCurrentItem(getItempisces(-1), true);
+    }
+    public  int getItemnav(int i) {
+        return mViewPagerNav.getCurrentItem() + i;
+    }
+    public  void siguientenav(View view) {
+        mViewPagerNav.setCurrentItem(getItemnav(+1), true); //getItem(-1) for previous
+    }
+    public  void atrasnav(View view) {
+        mViewPagerNav.setCurrentItem(getItemnav(-1), true);
     }
     //**************************************************
     /** A simple fragment that displays a TextView. */
@@ -136,8 +154,8 @@ public class Aldonza extends FragmentActivity {
             super.onViewCreated(view, savedInstanceState);
             MyPageAdapterPremios adapter = new MyPageAdapterPremios();
             adapter.setN(6);
-            mViewPager = (ViewPager) view.findViewById(R.id.viewPagerPisces);
-            mViewPager.setAdapter(adapter);
+            mViewPagerPisces = (ViewPager) view.findViewById(R.id.viewPagerPisces);
+            mViewPagerPisces.setAdapter(adapter);
         }
     }
 
@@ -154,8 +172,8 @@ public class Aldonza extends FragmentActivity {
             super.onViewCreated(view, savedInstanceState);
             MyPageAdapterPremios adapter = new MyPageAdapterPremios();
             adapter.setN(6);
-            ViewPager mViewPager = (ViewPager) view.findViewById(R.id.viewPagerNav);
-            mViewPager.setAdapter(adapter);
+            mViewPagerNav = (ViewPager) view.findViewById(R.id.viewPagerNav);
+            mViewPagerNav.setAdapter(adapter);
         }
     }
 

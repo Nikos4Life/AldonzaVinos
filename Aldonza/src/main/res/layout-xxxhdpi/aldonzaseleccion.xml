@@ -81,23 +81,25 @@
                     android:layout_marginTop="-45dp">
 
                     <ImageButton
-                        android:id="@+id/imageButtonAtrasSel"
+                        android:id="@+id/atrasaldonza"
                         android:layout_width="55dp"
                         android:layout_height="55dp"
                         android:layout_gravity="left"
                         android:background="#000000"
                         android:src="@drawable/flecha"
-                        android:onClick="atras" />
+                        android:clickable="true"
+                        android:onClick="atrasaldonza"
+/>
 
                     <ImageButton
-                        android:id="@+id/imageButtonSiguienteSel"
+                        android:id="@+id/siguientealdonza"
                         android:layout_width="55dp"
                         android:layout_height="55dp"
                         android:layout_column="10"
                         android:layout_gravity="center_horizontal|top"
                         android:layout_row="0"
-                        android:onClick="siguiente"
                         android:clickable="true"
+                        android:onClick="siguientealdonza"
                         android:background="#000000"
                         android:src="@drawable/flechader"
                         android:layout_marginLeft="105dp" />

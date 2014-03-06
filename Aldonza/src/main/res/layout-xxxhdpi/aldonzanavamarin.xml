@@ -81,22 +81,24 @@
                     android:layout_marginTop="-45dp">
 
                     <ImageButton
-                        android:id="@+id/imageButton3"
+                        android:id="@+id/atrasnav"
                         android:layout_width="55dp"
                         android:layout_height="55dp"
                         android:layout_gravity="left"
                         android:background="#000000"
-                        android:src="@drawable/flecha" />
+                        android:src="@drawable/flecha"
+                        android:clickable="true"
+                        android:onClick="atrasnav"/>
 
                     <ImageButton
-                        android:id="@+id/imageButton4"
+                        android:id="@+id/siguientenav"
                         android:layout_width="55dp"
                         android:layout_height="55dp"
                         android:layout_column="10"
                         android:layout_gravity="center_horizontal|top"
                         android:layout_row="0"
-                        android:onClick="cambiapremio"
                         android:clickable="true"
+                        android:onClick="siguientenav"
                         android:background="#000000"
                         android:src="@drawable/flechader"
                         android:layout_marginLeft="105dp" />

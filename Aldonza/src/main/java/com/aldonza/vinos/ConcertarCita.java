@@ -28,8 +28,6 @@ public class ConcertarCita extends Activity
         setContentView(R.layout.pruebacita);
         getActionBar().setTitle("");
 		//setContentView(R.layout.activity_concertar_cita);
-		Toast.makeText(this, "ConccertarCita", Toast.LENGTH_LONG).show();
-		
 		DNI = (EditText)findViewById(R.id.editText1);
 		nombre = (EditText)findViewById(R.id.editText2);
 		numAsistentes = (EditText)findViewById(R.id.editText3);
