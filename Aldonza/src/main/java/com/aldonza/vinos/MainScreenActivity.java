@@ -11,6 +11,7 @@ import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainScreenActivity extends Activity {
 
@@ -35,7 +36,15 @@ public class MainScreenActivity extends Activity {
             mediaPlayer.start();
         }
     }
-
+    public boolean onMenuItemSelected(int featureId,MenuItem item){
+        int itemId = item.getItemId();
+        switch(itemId){
+            case android.R.id.home:
+                Toast.makeText(this,"Has pulsado el Home",Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return true;
+    }
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main_screen, menu);

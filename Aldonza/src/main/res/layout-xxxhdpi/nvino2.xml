@@ -6,247 +6,285 @@
     android:background="#000000"
     android:orientation="horizontal" >
 
-    <LinearLayout
-        android:id="@+id/linearLayout1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="0dp"
-        android:background="@drawable/headeraldonza"
-        android:orientation="vertical" >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:weightSum="1" >
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="33dp"
-                android:layout_height="33dp"
-                android:layout_marginLeft="210dp"
-                android:layout_marginTop="105dp"
-                android:background="@drawable/twitter"
-                android:onClick="twitter" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="33dp"
-                android:layout_height="33dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="105dp"
-                android:background="@drawable/facebook"
-                android:onClick="facebook" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="33dp"
-                android:layout_height="33dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="105dp"
-                android:background="@drawable/youtube"
-                android:onClick="youtube" />
-        </LinearLayout>
-    </LinearLayout>
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/linearLayout1"
-        android:src="@drawable/bot_seleccion" />
+        android:src="@drawable/bot_seleccion"
+        android:layout_alignParentTop="true" />
 
-    <LinearLayout
-        android:id="@+id/LinearLayout1"
+    <ScrollView
+        android:id="@+id/scrollView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/linearLayout1"
-        android:layout_toRightOf="@+id/imageView2"
-        android:orientation="vertical" >
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageView2">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_toRightOf="@+id/imageView2"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/linea" />
 
             <TextView
                 android:id="@+id/textViewTipoVino"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tipo de Vino > " />
+                android:textSize="20dp"
+                android:text="TIPO DE VINO:"
+                android:textColor="#e03f4b" />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tinto Barrica" />
-        </LinearLayout>
+                android:textSize="20dp"
+                android:text="Tinto Barrica." />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView15" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/linea" />
 
             <TextView
                 android:id="@+id/textViewTUva"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tipo de Uva > " />
+                android:textSize="20dp"
+                android:text="TIPO DE UVA:"
+                android:textColor="#e03f4b" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="UVA Tempranillo, Merlot, Cabernet-Sauvignon, Syrah."
+                android:textSize="20dp"
+                android:text="Merlot, Cabernet Sauvignon, Syrah, Tempranillo."
                 android:textAppearance="?android:attr/textAppearanceSmall" />
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView16" />
+
+            <ImageView
+                android:id="@+id/ImageView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/linea" />
 
             <TextView
                 android:id="@+id/textViewPresen"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Presentación > " />
+                android:textSize="20dp"
+                android:text="PRESENTACIÓN:"
+                android:textColor="#e03f4b" />
 
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="20dp"
                 android:text="Botella bordelesa 75 cl."
                 android:textAppearance="?android:attr/textAppearanceSmall" />
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView17" />
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/linea" />
 
             <TextView
                 android:id="@+id/textViewGrad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Graduación > " />
+                android:textSize="20dp"
+                android:text="GRADUACIÓN:"
+                android:textColor="#e03f4b" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="13,5% Vol."
+                android:textSize="20dp"
+                android:text="14% Vol."
                 android:textAppearance="?android:attr/textAppearanceSmall" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:layout_weight="0.03" >
 
             <TextView
-                android:id="@+id/textViewEla"
                 android:layout_width="wrap_content"
-                android:layout_height="44dp"
-                android:text="Elaboración > " />
+                android:layout_height="wrap_content"
+                android:id="@+id/textView18" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/linea" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="ELABORACIÓN:"
+                android:textColor="#e03f4b" />
 
             <ScrollView
-                android:id="@+id/sc2"
+                android:id="@+id/scrollView"
                 android:layout_width="wrap_content"
-                android:layout_height="97dp" >
+                android:layout_height="97dp"
+                android:layout_weight="0.03" >
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Elaborado a partir de nuestra mejor selección de uvas procedente de cepas de escasa producción y recolectadas durante la noche en su momento óptimo de maduración. El coupage se realiza avanzada la crianza para un mejor ensamblaje. Fermentación controlada a una temperatura de entre 25º a 28º C. Crianza de 13 meses en barrica nueva de roble americano y francés. Reposo en botella en la tranquilidad y sosiego de nuestra cava." />
+                    android:text="Elaborado a partir de una cuidada selección de uvas procedente de cepas de escasa producción y recolectadas durante la noche en su momento óptimo de maduración. El coupage se realiza avanzada la crianza para un mejor ensamblaje. Fermentación controlada a una temperatura de entre 25º a 28º C. Crianza durante 9 meses en barrica nueva de roble americano y francés. Reposo en botella durante 12 meses en la oscuridad de nuestra cava." />
             </ScrollView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
 
             <TextView
-                android:id="@+id/textViewGastr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gastronomía > " />
+                android:id="@+id/textView19" />
 
-            <ScrollView
-                android:id="@+id/scService"
+            <ImageView
+                android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
-
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ideal para todo tipo de embutidos, carnes, estofados, arroces, salazones y pastas." />
-            </ScrollView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:src="@drawable/linea" />
 
             <TextView
-                android:id="@+id/textViewServic"
+                android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Servicio > " />
+                android:textSize="20dp"
+                android:text="SERVICIO:"
+                android:textColor="#e03f4b" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Entre 16 - 18º C." />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView20" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/linea" />
 
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Entre 16 - 18º C." />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/textViewprod"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Producción > " />
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="380.000 botellas"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <TextView
-                android:id="@+id/textViewcata"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cata > " />
+                android:textSize="20dp"
+                android:text="GASTRONOMÍA:"
+                android:textColor="#e03f4b" />
 
             <ScrollView
-                android:id="@+id/scCata"
+                android:id="@+id/scrollView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Buen maridaje con carnes, guisos, caza y quesos." />
+            </ScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView21" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/linea" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="PRODUCCIÓN:"
+                android:textColor="#e03f4b" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Versión 75cl. 38.200 botellas. Versión Mágnum 400 botellas."
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView22" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/linea" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="CATA:"
+                android:textColor="#e03f4b" />
+
+            <ScrollView
+                android:id="@+id/scrollView3"
                 android:layout_width="wrap_content"
                 android:layout_height="75dp" >
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/textView14"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Color rojo cereza, de capa media-alta. Potente aroma, destacando la fruta roja madura, los torrefactos y los frutos secos. Sabroso en boca, amplio y equilibrado dejando un final de boca muy agradable y persistente."
+                    android:text="Color rojo cereza intenso de capa alta. Intenso en aromas a fruta roja madura con torrefactos, vainilla y frutos secos. Amplio en boca, con buen cuerpo y perfecto ensamblaje, deja un final de boca largo, intenso y persistente."
                     android:textAppearance="?android:attr/textAppearanceSmall" />
             </ScrollView>
         </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

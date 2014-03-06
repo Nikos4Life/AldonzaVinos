@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
+import android.widget.Toast;
 
 /**
  * Created by Miguel on 6/02/14.O no.
@@ -54,6 +55,15 @@ public class Vinedos extends Activity {
         tabHost.addTab(spec3);
         
         //finaltab
+    }
+    public boolean onMenuItemSelected(int featureId,MenuItem item){
+        int itemId = item.getItemId();
+        switch(itemId){
+            case android.R.id.home:
+                Toast.makeText(this, "Has pulsado el Home", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return true;
     }
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
