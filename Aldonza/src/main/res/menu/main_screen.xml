@@ -3,19 +3,16 @@
         android:id="@+id/cocerCita"
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
-
-        android:icon="@drawable/call"/>
-    <item
-        android:id="@+id/Preferencias"
-        android:orderInCategory="100"
-        android:showAsAction="ifRoom"
-        android:title="@string/preferencias_menu"/>
+        android:icon="@drawable/iconocita"/>
      <item
         android:id="@+id/about"
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
-        android:title="@string/about_us_menu"/>
-
-   
+        android:icon="@drawable/iconoabout"/>
+    <item
+        android:id="@+id/Preferencias"
+        android:orderInCategory="200"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/iconosettings"/>
 
 </menu>

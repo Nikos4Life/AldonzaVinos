@@ -12,6 +12,7 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
+
         /** set time to splash out */
         final int welcomeScreenDisplay = 850;
         /** create a thread to show splash up to splash time */
