@@ -14,7 +14,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp" />
 
     <ScrollView
         android:id="@+id/scrollView4"
@@ -39,19 +40,17 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="TIPO DE VINO:"
-                android:textColor="#e03f4b" />
+                android:textColor="#e03f4b"
+                android:layout_marginLeft="5dp" />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="Tinto Barrica." />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView15" />
+                android:textSize="15dp"
+                android:text="Tinto Barrica."
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp" />
 
             <ImageView
                 android:id="@+id/imageView1"
@@ -65,20 +64,18 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="TIPO DE UVA:"
-                android:textColor="#e03f4b" />
+                android:textColor="#e03f4b"
+                android:layout_marginLeft="5dp" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:text="UVA Tempranillo, Merlot, Cabernet-Sauvignon, Syrah."
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView16" />
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp" />
 
             <ImageView
                 android:id="@+id/ImageView02"
@@ -92,20 +89,18 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="PRESENTACIÓN:"
-                android:textColor="#e03f4b" />
+                android:textColor="#e03f4b"
+                android:layout_marginLeft="5dp" />
 
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:text="Botella bordelesa 75 cl."
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView17" />
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp" />
 
             <ImageView
                 android:id="@+id/ImageView01"
@@ -119,20 +114,18 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="GRADUACIÓN:"
-                android:textColor="#e03f4b" />
+                android:textColor="#e03f4b"
+                android:layout_marginLeft="5dp" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:text="13,5% Vol."
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView18" />
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp" />
 
             <ImageView
                 android:id="@+id/imageView"
@@ -146,25 +139,16 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="ELABORACIÓN:"
-                android:textColor="#e03f4b" />
-
-            <ScrollView
-                android:id="@+id/scrollView"
-                android:layout_width="wrap_content"
-                android:layout_height="97dp"
-                android:layout_weight="0.03" >
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Crianza durante 6 meses en barrica de roble americano y francés. Reposo en botella durante al menos 6 meses antes de su comercialización." />
-            </ScrollView>
+                android:textColor="#e03f4b"
+                android:layout_marginLeft="5dp" />
 
             <TextView
+                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView19" />
+                android:text="Crianza durante 6 meses en barrica de roble americano y francés. Reposo en botella durante al menos 6 meses antes de su comercialización."
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp" />
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -178,19 +162,17 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="SERVICIO:"
-                android:textColor="#e03f4b" />
+                android:textColor="#e03f4b"
+                android:layout_marginLeft="5dp" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="Entre 16 - 18º C." />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView20" />
+                android:textSize="15dp"
+                android:text="Entre 16 - 18º C."
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp" />
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -204,25 +186,23 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="GASTRONOMÍA:"
-                android:textColor="#e03f4b" />
+                android:textColor="#e03f4b"
+                android:layout_marginLeft="5dp" />
 
             <ScrollView
                 android:id="@+id/scrollView2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" >
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp">
 
                 <TextView
                     android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="20dp"
+                    android:textSize="15dp"
                     android:text="Ideal para todo tipo de embutidos, carnes, estofados, arroces, salazones y pastas." />
             </ScrollView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView21" />
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -236,20 +216,18 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="PRODUCCIÓN:"
-                android:textColor="#e03f4b" />
+                android:textColor="#e03f4b"
+                android:layout_marginLeft="5dp" />
 
             <TextView
                 android:id="@+id/textView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 android:text="380.000 botellas"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView22" />
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp" />
 
             <ImageView
                 android:id="@+id/imageView6"
@@ -263,12 +241,15 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="CATA:"
-                android:textColor="#e03f4b" />
+                android:textColor="#e03f4b"
+                android:layout_marginLeft="5dp" />
 
             <ScrollView
                 android:id="@+id/scrollView3"
                 android:layout_width="wrap_content"
-                android:layout_height="75dp" >
+                android:layout_height="75dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp">
 
                 <TextView
                     android:id="@+id/textView14"
