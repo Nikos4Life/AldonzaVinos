@@ -84,7 +84,8 @@
         android:id="@+id/scrollView"
         android:layout_below="@+id/linearLayout1"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="2dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -98,9 +99,19 @@
                 android:id="@+id/textView1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pedir cita"
+                android:text="PEDIR CITA"
                 android:layout_marginLeft="10dp"
-                android:textAppearance="?android:attr/textAppearanceLarge" />
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center_horizontal"
+                android:textSize="25dp"
+                android:textColor="#e03f4b" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:src="@drawable/linea"
+                android:layout_gravity="center_horizontal" />
 
             <EditText
                 android:id="@+id/editText1"
@@ -149,36 +160,84 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text=""
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
 
-                <Button
-                    android:id="@+id/button1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="alta"
-                    android:text="Reservar" />
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:clickable="true"
+                        android:onClick="alta"
+                        android:background="@drawable/reservarcita" />
 
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="baja"
-                    android:text="Anular" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Concertar cita"
+                        android:id="@+id/textView"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:onClick="alta"/>
+                </LinearLayout>
 
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp">
 
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:onClick="consulta"
-                    android:text="Consulta por Dni" />
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:clickable="true"
+                        android:onClick="consulta"
+                        android:background="@drawable/busquedadni" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Buscar cita por DNI"
+                        android:id="@+id/textView3"
+                        android:clickable="true"
+                        android:onClick="consulta"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:clickable="true"
+                        android:onClick="baja"
+                        android:background="@drawable/cancelacita" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Cancelar cita"
+                        android:id="@+id/textView2"
+                        android:clickable="true"
+                        android:onClick="baja"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
 
             </LinearLayout>
 
