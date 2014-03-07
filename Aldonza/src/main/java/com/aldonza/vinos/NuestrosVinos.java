@@ -25,7 +25,7 @@ public class NuestrosVinos extends Activity {
         viewPager.setAdapter(adapter);
         viewPager.setPageTransformer(true, new ZoomOutPageTransformer());
         viewPager.setCurrentItem(0);
-        
+        ///ggf
 //        AyudanteDB ayudantebd = new AyudanteDB(this, null, 1);
 //        ayudantebd.openDataBase();
     }
