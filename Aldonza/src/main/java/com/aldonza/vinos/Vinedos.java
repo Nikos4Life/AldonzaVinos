@@ -123,23 +123,9 @@ public class Vinedos extends Activity {
     	startActivity(intent);
     }
     public void youtube(View v){
-//    	Intent intent = new Intent(Intent.ACTION_VIEW);
-//    	intent.setData(Uri.parse("https://www.youtube.com/channel/UCbgjP5f05GQqAeg8b2O5xMQ"));
-//    	startActivity(intent);
-    	
-    	Intent intent = new Intent(Intent.ACTION_SEARCH);
-    	intent.setPackage("com.google.android.youtube");
-    	//la cadena a buscar
-    	intent.putExtra("query", "una ranita iba caminando");
-    	intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-    	try
-    	{
-    	  startActivity(intent);
-    	} 
-    	catch (ActivityNotFoundException e)
-    	{
-    	  //la app no esta instalada, mostrar por ejemplo un AlertDialog
-    	}
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("http://www.youtube.com/watch?v=U26vd2hnu5U"));
+        startActivity(intent);
     }
 
 }

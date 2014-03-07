@@ -109,33 +109,26 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
-                <ImageButton
-                    android:id="@+id/imageButton1"
-                    android:layout_height="55dp"
-                    android:layout_width="55dp"
-                    android:layout_column="0"
-                    android:layout_gravity="left|top"
-                    android:layout_row="0"
-                    android:background="#000000"
-                    android:src="@drawable/menuicono" />
 
-                <ImageButton
-                    android:id="@+id/imageButton2"
-                    android:layout_height="55dp"
-                    android:layout_width="55dp"
-                    android:layout_column="0"
-                    android:layout_gravity="right|top"
-                    android:layout_row="0"
-                    android:background="#000000"
-                    android:src="@drawable/masboton" />
+
+
             </GridLayout>
         </LinearLayout>
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/linea"
+            android:layout_gravity="fill_horizontal"
+            android:layout_row="0"
+            android:layout_column="0" />
         <view
             class="android.support.v4.view.ViewPager"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/viewPagerAldonza" />
+            android:id="@+id/viewPagerAldonza"
+            android:layout_marginTop="7dp" />
 
     </LinearLayout>
 

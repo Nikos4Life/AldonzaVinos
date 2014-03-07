@@ -3,9 +3,11 @@ package com.aldonza.vinos;
 
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Menu;
@@ -139,6 +141,34 @@ public class MainScreenActivity extends Activity {
                 break;
         }
     }
+    public void twitter(View v){
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://twitter.com/AldonzaWines"));
+        startActivity(intent);
+    }
+    public void facebook(View v){
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://www.facebook.com/aldonzawines"));
+        startActivity(intent);
+    }
+    public void youtube(View v){
+	    	Intent intent = new Intent(Intent.ACTION_VIEW);
+	    	intent.setData(Uri.parse("http://www.youtube.com/watch?v=U26vd2hnu5U"));
+	    	startActivity(intent);
 
+ //       Intent intent = new Intent(Intent.ACTION_SEARCH);
+  //      intent.setPackage("com.google.android.youtube");
+  //      //la cadena a buscar
+  //      intent.putExtra("query", "Boss Legacy Ajusa 40 Aniversario");
+  //      intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+  //      try
+  //      {
+   //         startActivity(intent);
+   //     }
+   //     catch (ActivityNotFoundException e)
+   ///     {
+    //        //la app no est� instalada, mostrar por ejemplo un AlertDialog
+    //    }
+    }
 
 }
