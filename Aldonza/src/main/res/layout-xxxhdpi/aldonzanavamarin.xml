@@ -33,13 +33,12 @@
         </GridLayout>
 
         <GridLayout
-            android:layout_width="wrap_content"
+            android:layout_width="230dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.35"
             android:columnCount="1">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="248dp"
                 android:layout_height="match_parent"
                 android:layout_column="0"
                 android:layout_gravity="left|top"

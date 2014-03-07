@@ -8,21 +8,19 @@
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="14dp"
         android:layout_marginTop="11dp"
         android:layout_marginLeft="0dp"
-        android:layout_marginRight="0dp"
-        android:background="@drawable/premio5pisces">
+        android:background="@drawable/premio5pisces"
+        android:layout_marginBottom="5dp">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="2008 \n Añada 2006 \n Medalla de Plata en el Sélection \n Mondiales des Vins \n Québec (Canadá)"
+            android:layout_height="90dp"
+            android:text="2008 \n Añada 2006 \n Medalla de Plata en el Sélection\nMondiales des Vins \n Québec (Canadá)"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:gravity="center"
-            android:textSize="14dp"
-            android:layout_weight="0"
+            android:textSize="13dp"
             android:layout_gravity="bottom" />
     </LinearLayout>
 

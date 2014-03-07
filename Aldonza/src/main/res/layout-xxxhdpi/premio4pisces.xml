@@ -17,12 +17,11 @@
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="85dp"
             android:text="2008 \n Añada 2006 \n Medalla de Plata en el \n Concurso Internacional más \n prestigioso de Asia \n Tokio (Japón)"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:gravity="center"
             android:textSize="14dp"
-            android:layout_weight="0"
             android:layout_gravity="bottom" />
     </LinearLayout>
 
