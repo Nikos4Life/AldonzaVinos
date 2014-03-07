@@ -23,6 +23,7 @@ public class NuestrosVinos extends Activity {
         AdapterNuestrosVinos adapter = new AdapterNuestrosVinos();
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewPagerA2);
         viewPager.setAdapter(adapter);
+        viewPager.setPageTransformer(true, new ZoomOutPageTransformer());
         viewPager.setCurrentItem(0);
         
 //        AyudanteDB ayudantebd = new AyudanteDB(this, null, 1);
