@@ -2,7 +2,7 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/museo2">
+    android:background="@drawable/museo">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="MUSEO ETNOGRÁFICO DE TIRIEZ"
+                android:text="MUSEO DE TIRIEZ"
                 android:id="@+id/textViewmuseos"
                 android:layout_gravity="center_horizontal|top"
                 android:layout_marginTop="5dp"
@@ -42,51 +42,51 @@
                 android:id="@+id/imageView"
                 android:src="@drawable/linea"
                 android:layout_gravity="center_horizontal|top" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textView"
+                        android:textColor="#FFF"
+                        android:textSize="23dp"
+                        android:text="@string/museo1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textView"
+                        android:textColor="#FFF"
+                        android:textSize="23dp"
+                        android:text="@string/museo2" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textView"
+                        android:textColor="#FFF"
+                        android:textSize="23dp"
+                        android:text="@string/museo3" />
+
+
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/scrollView"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="5dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="87dp">
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:id="@+id/textView"
-                    android:textColor="#FFF"
-                    android:textSize="23dp"
-                    android:text="@string/museo1" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:id="@+id/textView"
-                    android:textColor="#FFF"
-                    android:textSize="23dp"
-                    android:text="@string/museo2" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:id="@+id/textView"
-                    android:textColor="#FFF"
-                    android:textSize="23dp"
-                    android:text="@string/museo3" />
-
-
-            </LinearLayout>
-        </ScrollView>
 
     </RelativeLayout>
 </RelativeLayout>

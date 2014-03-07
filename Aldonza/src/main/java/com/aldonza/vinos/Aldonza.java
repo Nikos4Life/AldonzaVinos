@@ -39,10 +39,10 @@ public class Aldonza extends FragmentActivity {
         mPager.setAdapter(mAdapter);
         mPager.setPageTransformer(true, new ZoomOutPageTransformer());
 
-        // This is required to avoid a black flash when the map is loaded. The
-        // flash is due
-        // to the use of a SurfaceView as the underlying view of the map.
-        //mPager.requestTransparentRegion(mPager);
+//        This is required to avoid a black flash when the map is loaded. The
+//        flash is due
+//        to the use of a SurfaceView as the underlying view of the map.
+//        mPager.requestTransparentRegion(mPager);
     }
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

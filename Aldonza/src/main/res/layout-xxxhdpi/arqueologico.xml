@@ -2,7 +2,7 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/arqueo2">
+    android:background="@drawable/arqueo">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="YACIMIENTO ARQUEOLÓGICO DE LIBISOSA"
+                android:text=" LIBISOSA"
                 android:id="@+id/textViewarqueo"
                 android:layout_gravity="center_horizontal|top"
                 android:layout_marginTop="5dp"
@@ -43,13 +43,14 @@
                 android:id="@+id/imageView"
                 android:src="@drawable/linea"
                 android:layout_gravity="center_horizontal|top" />
+
         </LinearLayout>
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/scrollView"
-            android:layout_marginTop="123dp"
+            android:layout_marginTop="45dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
             android:layout_alignParentLeft="true"
@@ -57,8 +58,9 @@
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
